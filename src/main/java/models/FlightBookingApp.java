@@ -10,11 +10,13 @@ public class FlightBookingApp implements IBook {
 
 
     public FlightBookingApp() {
+
         this.flights = new ArrayList<>();
         this.passengers = new ArrayList<>();
     }
 
     public void addFlight(){
+
         Flight flight = new Flight("Spain", "SP1", Weekday.MONDAY, TimeSlot.EVENING);
             this.flights.add(flight);
     }
@@ -24,11 +26,13 @@ public class FlightBookingApp implements IBook {
     }
     public void addPassenger(String name, int phoneNum, String id) {
         Passenger passenger = new Passenger("Mich", 071234567, "BA12345");
+
         this.passengers.add(passenger);
     }
 
     public String bookPassenger(Passenger passenger, Flight flight) {
         flight.addPassenger(passenger);
+
         return "successfully Booked";
     }
     public String cancelBooking(Passenger passenger, Flight flight){
@@ -43,3 +47,4 @@ public class FlightBookingApp implements IBook {
         }
     }
 }
+

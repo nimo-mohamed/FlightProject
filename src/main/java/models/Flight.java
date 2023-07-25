@@ -12,6 +12,7 @@ public class Flight {
 
 
     public Flight(String destination, String flightId, Weekday weekday, TimeSlot timeSlot) {
+
         this.destination = destination;
         this.flightId = flightId;
         this.passengers = passengers;

@@ -17,6 +17,6 @@ public class PassengerTest {
     public void canGetName(){
         assertThat(passenger.getName()).isEqualTo("nimo");
     }
-    @Test
+
 
 }
