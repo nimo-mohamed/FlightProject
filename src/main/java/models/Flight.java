@@ -1,3 +1,5 @@
+package models;
+
 import java.util.ArrayList;
 
 public class Flight {
@@ -9,7 +11,7 @@ public class Flight {
     private TimeSlot timeSlot;
 
 
-    public Flight(String destination, String flightId, ArrayList<Passenger> passengers, Weekday weekday, TimeSlot timeSlot) {
+    public Flight(String destination, String flightId, Weekday weekday, TimeSlot timeSlot) {
         this.destination = destination;
         this.flightId = flightId;
         this.passengers = passengers;
